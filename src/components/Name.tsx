@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import stylesBW from '../styles/components/BW/NameBW.module.scss'
 import stylesPU from '../styles/components/PU/NamePU.module.scss'
 import stylesAQ from '../styles/components/AQ/NameAQ.module.scss'
@@ -16,13 +16,15 @@ const Name = ({ name, style, path }: ListProps) => {
   if(style==='aq') styles = stylesAQ
 
   const navigate = useNavigate()
+  const location = useLocation()
 
+  console.log(location)
   const goto = () => {
     navigate(path)
   }
 
   return (
-    <div className={styles.name} onClick={() => goto()}>
+    <div className={styles.name} style={{opacity: location.pathname===path? 1 : 0.4}} onClick={() => goto()}>
       <span style={{marginLeft: 10}}>{name}</span>
     </div>
   )

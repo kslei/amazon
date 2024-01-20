@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className={styles.wrapper}>
         <Name name="Accounts" style="bw" path='/'/>
         <Name name="Profiles" style="pu" path='/profile'/>
-        <Name name="Compaigns" style="aq"path='compaign' />
+        <Name name="Compaigns" style="aq"path='/compaign' />
       </div>
     </div>
   )

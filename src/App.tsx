@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, /* BrowserRouter, */ Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import Accounts from './pages/Accounts'
 import Compaigns from './pages/Compaigns'
@@ -9,7 +9,7 @@ import Profiles from './pages/Profiles'
 function App() {
     
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Header />
       <Routes>
         <Route path='/' element={<Accounts />}/>
@@ -18,7 +18,7 @@ function App() {
         <Route path='/compaign' element={<Compaigns />} />
         <Route path='/compaign/:id' element={<Compaigns/>}/>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
