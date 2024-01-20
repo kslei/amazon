@@ -1,0 +1,53 @@
+@import '../../base/base.scss';
+
+.pagesLimit {
+  @include flex-row;
+  align-items: center;
+  position: relative;
+  width: 120px;
+  height: 28px;
+  background-color: $light-pu;
+  border: 1px solid $dark-pu;
+  border-radius: 3px;
+  margin-inline: 5px;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $medium-pu;
+
+  }
+
+  &__title {
+    width: 100%;
+    font-weight: 400;
+    margin-left: 5px;
+    color: $dark-pu;
+    &:hover {
+      color: $base;
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    width: calc(100% - 2px);
+    top: 29px;
+    left: 0;
+    background-color: $light-pu;
+    border: 1px solid $dark-pu;
+  }
+}
+
+.btn {
+  @include flex-column;
+  justify-content: center;
+  width: 100%;
+  height: 20px;
+  font-weight: 400;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $medium-pu;
+    color: $base;
+  }
+}

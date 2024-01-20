@@ -1,0 +1,74 @@
+@import '../../base/base.scss';
+
+.filter {
+  @include flex-row;
+  align-items: center;
+  position: relative;
+  width: calc(100% - 2px);
+  height: 22px;
+  background-color: $light-bw;
+  border: 1px solid $dark-bw;
+  border-radius: 4px;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+    background-color: $medium-bw;
+  }
+  &__title {
+    @include flex-row;
+    align-items: center;
+    width: 100%;
+    &:hover {
+      color: $base;
+    }
+    &_text {
+      font-weight: 400;
+      margin-left: 5px;
+      font-style: italic;
+      color: $dark-bw;
+    }
+    &_iconUp, &_iconDown {
+      width: 22px;
+      height: 22px;
+      background-color: $dark-bw;
+      &:hover {
+        background-color: $base;
+      }
+    }
+    &_iconUp {
+      mask: url('../../../assets/up.png') center / contain no-repeat;
+    }
+    &_iconDown {
+      mask: url('../../../assets/down.png') center / contain no-repeat;
+    }
+  }
+  &__menu {
+    position: absolute;
+    width: calc(100% - 2px);
+    top: 23px;
+    left: 0;
+    background-color: $light-bw;
+    border: 1px solid $dark-bw;
+  }
+}
+.filter__title:hover > .filter__title_iconUp {
+  background-color: $base;
+}
+.filter__title:hover > .filter__title_iconDown {
+  background-color: $base;
+}
+.btn {
+  @include flex-column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5px;
+  width: 100%;
+  height: 20px;
+  font-weight: 400;
+  font-size: 14px;
+  &:hover {
+    cursor: pointer;
+    background-color: $medium-bw;
+    color: $base;
+  }
+}

@@ -1,0 +1,15 @@
+@import '../../base/base.scss';
+
+.name {
+  width: 220px;
+  text-align: left;
+  padding: 10px 0;
+  background: linear-gradient(45deg, $dark-aq, $medium-aq 155px, transparent 155px);
+  color: $base;
+  font-family: $font-family;
+  font-size: 28px;
+  font-style: italic;
+  &:hover {
+    cursor: pointer;
+  }
+}

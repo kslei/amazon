@@ -1,0 +1,65 @@
+@import './_null.scss';
+@import './_fonts.scss';
+
+$base: white;
+$light-bw: #eeeeee;
+$medium-bw: #6c6c6c;
+$dark-bw: #000000;
+
+$light-pu: #f6dcf7;
+$medium-pu: #f55ffa;
+$dark-pu: #68026b;
+
+$light-aq: #dcf7f7;
+$medium-aq: #20e0e3;
+$dark-aq: #025d5e;
+
+$font-size: 16px;
+$font-family: 'Poppins';
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  @include flex-column;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: #F7F4FF;
+}
+
+.wrapper {
+  width: calc(100% - 10px);
+  margin: auto;
+  @include flex-column;
+
+  @media (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1140px;
+  }
+
+  @media (min-width: 1400px) {
+    width: 1320px;
+  }
+  @media (min-width: 1600px) {
+    width: 1440px;
+  }
+}
+

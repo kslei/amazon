@@ -1,0 +1,47 @@
+@import '../base/base.scss';
+
+.content {
+  width: 100%;
+  @include flex-column;
+  min-height: calc(100vh - 220px);
+}
+
+.title {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  background-color: $light-bw;
+  &__row {
+    @include flex-row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__text {
+    width: calc(100% - 16px);
+    font-weight: 600;
+    text-align: center;
+  }
+  &__col {
+    @include flex-column;
+    justify-content: space-between;
+    margin-right: 5px;
+  }
+  &__btnUp, &__btnDown {
+    width: 18px;
+    height: 18px;
+    background: $medium-bw;
+    
+    &:hover{
+      background: $dark-bw;
+      cursor: pointer;
+    }
+  }
+  &__btnUp {
+    mask: url('../../assets/up.png') center / contain no-repeat; 
+  }
+  &__btnDown {
+    mask: url('../../assets/down.png') center / contain no-repeat; 
+  }
+}

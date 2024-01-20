@@ -1,0 +1,18 @@
+@import '../base/base';
+
+.item {
+  width: 100%;
+  font-size: $font-size;
+  font-family: $font-family;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  color: $dark-pu;
+  &:hover {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  div {
+    border: 0.5px solid $dark-pu;
+    padding: 10px;
+  }
+}

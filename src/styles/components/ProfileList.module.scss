@@ -1,0 +1,7 @@
+@import '../base/base.scss';
+
+.list {
+  width: 100%;
+  @include flex-column;
+  border: 0.5px solid $dark-pu;
+}

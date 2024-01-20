@@ -1,0 +1,27 @@
+@import '../../base/base.scss';
+
+.pages {
+  width: 100%;
+  @include flex-row;
+  justify-content: flex-start;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+.btn {
+  @include flex-column;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: $light-pu;
+  border: 1px solid $dark-pu;
+  border-radius: 3px;
+  margin-inline: 5px;
+  font-weight: 600;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $medium-pu;
+    color: $base;
+  }
+}

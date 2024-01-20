@@ -1,0 +1,11 @@
+@import '../base/base.scss';
+
+.header {
+  width: 100%;
+  margin-top: 20px;
+}
+.wrapper {
+  @include flex-row;
+  justify-content: flex-start;
+  min-height: auto;
+}
