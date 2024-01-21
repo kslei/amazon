@@ -45,10 +45,12 @@
 
     &_iconUp {
       mask: url('../../../assets/up.png') center / contain no-repeat;
+      -webkit-mask: url('../../../assets/up.png') center / contain no-repeat;
     }
 
     &_iconDown {
       mask: url('../../../assets/down.png') center / contain no-repeat;
+      -webkit-mask: url('../../../assets/down.png') center / contain no-repeat;
     }
   }
 

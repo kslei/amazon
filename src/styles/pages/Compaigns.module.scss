@@ -47,9 +47,11 @@
 
   &__btnUp {
     mask: url('../../assets/up.png') center / contain no-repeat;
+    -webkit-mask: url('../../assets/up.png') center / contain no-repeat;
   }
 
   &__btnDown {
     mask: url('../../assets/down.png') center / contain no-repeat;
+    -webkit-mask: url('../../assets/down.png') center / contain no-repeat;
   }
 }
